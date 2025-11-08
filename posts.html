@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إضافة منشور جديد</title>
+  <link rel="stylesheet" href="posts.css">
+</head>
+<body>
+
+<header>
+  <h1>📢 إدارة المنشورات</h1>
+</header>
+
+<main>
+
+  <!-- نموذج إضافة منشور -->
+  <form id="postForm" class="card">
+    <label>📘 عنوان المنشور:</label>
+    <input type="text" id="title" required>
+
+    <label>👨‍🏫 رقم المعلم (ID):</label>
+    <input type="text" id="teacherId" required>
+
+    <label>📝 نص المنشور:</label>
+    <textarea id="content" rows="3"></textarea>
+
+    <label>🎞️ نوع الملف:</label>
+    <select id="type" required>
+      <option value="">اختر نوع الملف</option>
+      <option value="image">📷 صورة</option>
+      <option value="video">🎬 فيديو</option>
+      <option value="pdf">📄 PDF</option>
+      <option value="text">📝 نص فقط</option>
+    </select>
+
+    <label>🔗 رابط الملف:</label>
+    <input type="url" id="fileUrl">
+
+    <button type="submit">➕ إضافة المنشور</button>
+  </form>
+
+  <div id="statusMsg"></div>
+
+  <hr style="margin: 40px 0; border: 1px solid #FFD700">
+
+  <!-- عرض المنشورات -->
+  <h2 style="color:#FFD700">📋 جميع المنشورات</h2>
+  <div id="postsList"></div>
+
+</main>
+
+<footer>
+  <p>© 2025 سنتر الأطباء التعليمي</p>
+</footer>
+
+<script type="module" src="posts.js"></script>
+</body>
+</html>

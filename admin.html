@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم - سنتر الأطباء</title>
+  <link rel="stylesheet" href="admin.css">
+  <script type="module" src="admin.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🩺 لوحة التحكم - سنتر الأطباء التعليمي</h1>
+    <nav>
+      <button id="goToPosts">📚 إدارة المنشورات</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- شعار -->
+    <section class="logo-section">
+      <h2>🔰 شعار الموقع</h2>
+      <input type="text" id="logoUrl" placeholder="أدخل رابط صورة الشعار">
+      <button id="saveLogo">💾 حفظ الشعار</button>
+    </section>
+
+    <!-- معلومات الموقع -->
+    <section class="site-info">
+      <h2>📍 معلومات الموقع</h2>
+      <input type="text" id="siteName" placeholder="اسم الموقع (اختياري)">
+      <input type="text" id="siteLocation" placeholder="الموقع الجغرافي">
+      <button id="saveSiteInfo">💾 حفظ المعلومات</button>
+    </section>
+
+    <!-- روابط التواصل الاجتماعي -->
+    <section class="socials-section">
+      <h2>🔗 روابط التواصل الاجتماعي</h2>
+      <input type="text" id="socialName" placeholder="اسم المنصة (مثلاً فيسبوك)">
+      <input type="text" id="socialImage" placeholder="رابط صورة شعار المنصة">
+      <input type="text" id="socialLink" placeholder="رابط الصفحة">
+      <button id="addSocial">➕ إضافة الرابط</button>
+
+      <div id="socialList"></div>
+    </section>
+
+    <!-- إضافة معلم -->
+    <section class="add-teacher">
+      <h2>➕ إضافة معلم</h2>
+      <input type="text" id="name" placeholder="اسم المعلم">
+      <input type="text" id="subject" placeholder="المادة">
+      <input type="text" id="grade" placeholder="المرحلة الدراسية">
+      <input type="text" id="image" placeholder="رابط الصورة">
+      <input type="number" id="rating" placeholder="التقييم (1 - 5)">
+      <button id="addTeacher">💾 إضافة المعلم</button>
+    </section>
+
+    <!-- قائمة المعلمين -->
+    <section class="teachers-list">
+      <h2>📋 قائمة المعلمين</h2>
+      <div id="teachers"></div>
+    </section>
+  </main>
+</body>
+</html>
